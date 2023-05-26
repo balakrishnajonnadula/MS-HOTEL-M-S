@@ -1,0 +1,33 @@
+package com.hotelservice.dao.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.hotelservice.dao.HotelServiceDao;
+import com.hotelservice.entities.HotelEntity;
+import com.hotelservice.repository.HotelRepo;
+
+@Service
+public class HotelServiceDaoImpl implements HotelServiceDao {
+
+	@Autowired
+	private HotelRepo hRepo;
+	
+	@Override
+	public HotelEntity createHotel(HotelEntity hotel) {
+		return hRepo.save(hotel);
+	}
+
+	@Override
+	public HotelEntity getHotelById(String hotelId) {
+		return null;
+	}
+
+	@Override
+	public List<HotelEntity> getAllHotels(String hotelId) {
+		return null;
+	}
+
+}

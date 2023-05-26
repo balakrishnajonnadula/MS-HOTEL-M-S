@@ -1,0 +1,40 @@
+package com.userservice.dao.impl;
+
+import java.util.List;
+
+import com.userservice.dao.UserServiceDao;
+import com.userservice.entities.UserEntity;
+
+public class UserServiceDaoImpl implements UserServiceDao {
+
+	@Override
+	public UserEntity createUser(UserEntity user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<UserEntity> getAllUsers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserEntity getUserById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String updateUserById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String delteUserById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

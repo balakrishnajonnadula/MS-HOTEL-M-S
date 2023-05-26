@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=UserService/C:\/Users\/bj22208\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.7.11\/spring-data-jpa-2.7.11.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/2.7.11=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1682397649963"/>
+    <typeInfo handle="=UserService/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.userservice.dao{UserServiceDao.java[UserServiceDao" modifiers="513" timestamp="1684474703942"/>
+    <typeInfo handle="=HotelService/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.hotelservice.repository{HotelRepo.java[HotelRepo" modifiers="513" timestamp="1684477944389"/>
+    <typeInfo handle="=HotelService/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.hotelservice.dao{HotelServiceDao.java[HotelServiceDao" modifiers="513" timestamp="1684479464284"/>
+    <typeInfo handle="=UserService/D:\/sts-4.18.0.RELEASE\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/maven.pomderived=/true=/&lt;java.lang(RuntimeException.class[RuntimeException" modifiers="33" timestamp="1684141901827"/>
+</typeInfoHistroy>

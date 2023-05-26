@@ -1,0 +1,24 @@
+package com.hotelservice.entities;
+
+import javax.persistence.Id;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class HotelEntity {
+
+	@Id
+	private String hotel_Id;
+	
+	private String hotel_name;
+	
+	private String hotel_loaction;
+	
+	private String hotel_info;
+}

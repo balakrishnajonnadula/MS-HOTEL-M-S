@@ -1,0 +1,28 @@
+package com.rating.ratingservice.dao.impl;
+
+import java.util.List;
+
+import com.rating.entities.RatingEntity;
+import com.rating.ratingservice.dao.RatingServiceDao;
+
+public class RatingServiceDaoImpl implements RatingServiceDao {
+
+	@Override
+	public RatingEntity createRating(RatingEntity rating) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public RatingEntity getRatingById(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<RatingEntity> getAllRatings() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.userservice.dao;
+
+import com.userservice.entities.UserEntity;
+
+public interface UserServiceDao {
+	
+	public UserEntity createUser(UserEntity user);
+}

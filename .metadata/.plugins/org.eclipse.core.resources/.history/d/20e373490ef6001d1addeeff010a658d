@@ -1,0 +1,20 @@
+package com.hotelservice.entities;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class HotelEntity {
+
+	@Id
+	private String hotel_Id;
+	
+	private String hotel_name;
+	
+	private String hotel_loaction;
+	
+	private String hotel_info;
+}

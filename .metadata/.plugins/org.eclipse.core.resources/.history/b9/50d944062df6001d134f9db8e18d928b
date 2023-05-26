@@ -1,0 +1,29 @@
+package com.rating.ratingservice.dao.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.rating.entities.RatingEntity;
+import com.rating.ratingservice.dao.RatingServiceDao;
+
+@Service
+public class RatingServiceDaoImpl implements RatingServiceDao {
+
+	
+	@Override
+	public RatingEntity createRating(RatingEntity rating) {
+		return null;
+	}
+
+	@Override
+	public RatingEntity getRatingById(String id) {
+		return null;
+	}
+
+	@Override
+	public List<RatingEntity> getAllRatings() {
+		return null;
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.userservice.exceptions;
+
+public class UserNotFoundExceptin extends RuntimeException {
+
+	public UserNotFoundExceptin(String message) {
+		super(message);
+	}
+
+}

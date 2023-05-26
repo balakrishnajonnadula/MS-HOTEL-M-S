@@ -1,0 +1,17 @@
+package com.userservice.exceptions;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import com.userservice.payload.ApiResponse;
+
+@RestControllerAdvice
+public class GlobalException {
+	
+	@ExceptionHandler(UserNotFoundException.class)
+	public ResponseEntity<ApiResponse> handleUserNotFoundException(UserNotFoundException ex){
+		return null;
+		
+	}
+}

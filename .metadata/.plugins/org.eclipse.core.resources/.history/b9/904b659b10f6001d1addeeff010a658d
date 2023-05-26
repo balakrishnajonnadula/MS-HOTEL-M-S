@@ -1,0 +1,25 @@
+package com.hotelservice.dao.impl;
+
+import java.util.List;
+
+import com.hotelservice.dao.HotelServiceDao;
+import com.hotelservice.entities.HotelEntity;
+
+public class HotelServiceDaoImpl implements HotelServiceDao {
+
+	@Override
+	public HotelEntity createHotel(HotelEntity hotel) {
+		return null;
+	}
+
+	@Override
+	public HotelEntity getHotelById(String hotelId) {
+		return null;
+	}
+
+	@Override
+	public List<HotelEntity> getAllHotels(String hotelId) {
+		return null;
+	}
+
+}

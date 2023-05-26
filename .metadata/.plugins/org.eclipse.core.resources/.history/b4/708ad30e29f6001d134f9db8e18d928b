@@ -1,0 +1,10 @@
+package com.rating.ratingservice.dao;
+
+import com.rating.entities.RatingEntity;
+
+public interface RatingServiceDao {
+
+	public RatingEntity createRating(RatingEntity rating);
+	
+	public RatingEntity getUserById(String id);
+}
