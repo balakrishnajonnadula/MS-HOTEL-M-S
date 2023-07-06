@@ -1,0 +1,8 @@
+package com.hotelservice.feignservice;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name = "")
+public interface RatingService {
+
+}

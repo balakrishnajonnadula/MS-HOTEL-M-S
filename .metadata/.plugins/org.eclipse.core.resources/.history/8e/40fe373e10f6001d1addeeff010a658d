@@ -1,5 +1,0 @@
-package com.hotelservice.exceptions;
-
-public class GlobalException {
-
-}

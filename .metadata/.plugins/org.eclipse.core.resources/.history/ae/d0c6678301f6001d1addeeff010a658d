@@ -1,5 +1,0 @@
-package com.userservice.exceptions;
-
-public class UserNotFoundExceptin extends RuntimeException {
-
-}

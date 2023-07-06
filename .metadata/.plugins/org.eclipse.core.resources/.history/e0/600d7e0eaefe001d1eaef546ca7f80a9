@@ -1,0 +1,17 @@
+package com.hotelservice.feignservice;
+
+import java.util.List;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.hotelservice.entities.RatingEntity;
+
+@FeignClient(name = "RATING-SERVICE")
+public interface RatingService {
+
+	@GetMapping("/api/rating/hotel/{hotelId}")
+	public List<RatingEntity> ratings(@PathVariable String hotelId);
+	
+}

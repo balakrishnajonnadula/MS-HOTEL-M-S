@@ -39,4 +39,10 @@ public class RatingServiceDaoImpl implements RatingServiceDao {
 		return userRatings;
 	}
 
+	@Override
+	public List<RatingEntity> getByHotelId(String hotelId) {
+		List<RatingEntity> ratings = repo.findByHotelId(hotelId);
+		return ratings;
+	}
+
 }

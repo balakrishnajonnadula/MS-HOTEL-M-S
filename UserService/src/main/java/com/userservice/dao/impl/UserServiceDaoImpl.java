@@ -59,6 +59,7 @@ public class UserServiceDaoImpl implements UserServiceDao {
 					.getForEntity("http://HOTEL-SERVICE/api/hotel/" + rating.getHotelId(),
 							HotelEntity.class)
 					.getBody();
+			
 			rating.setHotel(hotel);
 
 			return rating;

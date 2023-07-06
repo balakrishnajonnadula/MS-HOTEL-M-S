@@ -1,8 +1,12 @@
 package com.hotelservice.entities;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -25,4 +29,7 @@ public class HotelEntity {
 	private String hotelLoaction;
 	
 	private String hotelInfo;
+	
+	@Transient
+	private List<RatingEntity> ratings = new ArrayList<RatingEntity>();
 }

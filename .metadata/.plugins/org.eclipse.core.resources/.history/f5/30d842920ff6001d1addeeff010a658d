@@ -1,5 +1,0 @@
-package com.hotelservice.entities;
-
-public class HotelNotFoundException extends RuntimeException {
-
-}

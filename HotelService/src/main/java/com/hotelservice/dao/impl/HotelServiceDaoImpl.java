@@ -1,21 +1,32 @@
 package com.hotelservice.dao.impl;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import com.hotelservice.dao.HotelServiceDao;
 import com.hotelservice.entities.HotelEntity;
+import com.hotelservice.entities.RatingEntity;
 import com.hotelservice.exceptions.HotelNotFoundException;
 import com.hotelservice.repository.HotelRepo;
+
+import net.bytebuddy.asm.Advice.Return;
 
 @Service
 public class HotelServiceDaoImpl implements HotelServiceDao {
 
 	@Autowired
 	private HotelRepo hRepo;
+
+	@Autowired
+	private RestTemplate restTemplate;
 
 	@Override
 	public HotelEntity createHotel(HotelEntity hotel) {
@@ -32,8 +43,15 @@ public class HotelServiceDaoImpl implements HotelServiceDao {
 
 	@Override
 	public List<HotelEntity> getAllHotels() {
+		List<HotelEntity> hotels = hRepo.findAll();
+		List<HotelEntity> collect = hotels.stream().map((h) -> {
+			ArrayList ratings = restTemplate.getForObject("http://RATING-SERVICE/api/rating/hotel/" + h.getHotelId(),
+					ArrayList.class);
+			h.setRatings(ratings);
+			return h;
+		}).collect(Collectors.toList());
 
-		return hRepo.findAll();
+		return hotels;
 	}
 
 }

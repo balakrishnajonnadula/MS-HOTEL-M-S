@@ -7,10 +7,12 @@ import com.rating.entities.RatingEntity;
 public interface RatingServiceDao {
 
 	public RatingEntity createRating(RatingEntity rating);
-	
+
 	public RatingEntity getRatingById(String id);
-	
+
 	public List<RatingEntity> getAllRatings();
-	
+
 	public List<RatingEntity> getByUserId(String userId);
+
+	public List<RatingEntity> getByHotelId(String hotelId);
 }
